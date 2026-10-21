@@ -167,7 +167,7 @@ The min to max ranges over the repeats of vLLM and hf do not overlap in any sett
 
 ## 🚀 Run it locally
 
-> **Not yet tested on the author's laptop.** The `fake` backend and the tests were run on it; the `hf` backend with a real model was not. This line will be updated once it has been run there.
+> Tested on the author's laptop (Windows, RTX 3050 Laptop GPU with 4 GB, Python 3.11, torch 2.13.0+cu130, transformers 5.19.0, peft 0.21.2) with the hf backend and the 0.5B SFT model: one answerable question and one question the passage cannot answer both returned the expected result. The 1.5B model and the 0.5B DPO v2 adapter were not tried on the laptop.
 
 **What works where.** vLLM does not run on native Windows, so the local path on Windows is the `hf` backend. (The vLLM backend was run on Linux, on Colab.) The tuned models are LoRA adapters on top of a base model.
 
