@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# virtual environments
+.venv/
+.venv-*/
+venv/
+
+# local results, adapters, MLflow store
+outputs/
+mlruns/
+
+# secrets
+.env
+.env.*
